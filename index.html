@@ -1,0 +1,32 @@
+<html>
+
+    <head>
+        <script src="./scripts.js"></script>
+        <link rel="stylesheet" href="./bootstrap.min.css">
+    </head>
+
+    <body>
+
+        <div class="container" style="margin-top: 50px">
+            <div class="alert alert-warning">
+                <strong>Warning!</strong> Only convert your mnemonic at a safe space where you don't have to fear that other people can see your mnemonic
+            </div>
+
+            <div class="alert alert-info">
+                <strong>Info!</strong> Your can run this locally. Press "cmd + s" to safe this page locally. Go to your downloads folder and open "index.html"
+            </div>
+
+            <div onsubmit="event.preventDefault(); handleFormSubmit();">
+                <form autocomplete="off">
+                    <div class="form-group">
+                        <label>Your mnemonic (from the pangea wallet)</label>
+                        <input id="mnemonic" type="text" class="form-control"  placeholder="Your mnemonic">
+                    </div>
+                    <button type="submit" class="btn btn-default">Convert</button>
+                </form>
+            </div>
+        </div>
+
+    </body>
+
+</html>
